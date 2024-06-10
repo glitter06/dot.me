@@ -18,7 +18,10 @@ const SearchBar:React.FC = () => {
         </button>
         <input className=' px-3 max-lg:w-[25rem] max-xl:w-[45rem] max-sm:max-w-[15rem] max-[320px]:max-w-[10rem] w-[55rem] max-[320px]:text-sm text-lg focus:outline-none dark:bg-Midnight-gray_800' type="search" name="search-panel"  placeholder='Search Notes' />
         <button type='button' onClick={() => dispatch(handleToggle())} >
-          {darkmode ? <Sun width={18} className=' max-[320px]:w-4' stroke='gray'/> : <Moon className='max-[320px]:w-4' width={18} stroke='grey'/> }
+          {darkmode ? 
+          (<Sun width={18} className=' max-[320px]:w-4' stroke='gray'/>) : 
+          (<Moon className='max-[320px]:w-4' width={18} stroke='grey'/>) 
+          }
           </button>
     </div>
     </div>
